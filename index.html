@@ -1,592 +1,90 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tanmay Singh | Astrophysics PhD Student</title>
-  <meta name="description" content="Academic website of Tanmay Singh, an Astrophysics PhD student at Arizona State University interested in galaxy formation and evolution.">
-  <meta name="keywords" content="Tanmay Singh, astrophysics, galaxy formation, galaxy evolution, circumgalactic medium, O VI, Arizona State University">
-  <meta name="author" content="Tanmay Singh">
-  <link rel="canonical" href="https://tanmay-starslab.github.io/">
-
-  <meta property="og:title" content="Tanmay Singh | Astrophysics PhD Student">
-  <meta property="og:description" content="Astrophysics PhD student at Arizona State University working on galaxy formation and evolution.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101310">
+  <meta name="description" content="Rishant Prakash, a Ph.D. student in Planetary and Space Sciences at UCF, explores meteorites, isotope geochemistry, and the origins of the Solar System.">
+  <meta property="og:title" content="Rishant Prakash — Small grains. Cosmic stories.">
+  <meta property="og:description" content="Cosmochemistry, meteorites, and the isotope signatures that connect rocks to stars.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://tanmay-starslab.github.io/">
-  <meta property="og:image" content="https://tanmay-starslab.github.io/images/headshot_tanmay.jpeg">
-
-  <link rel="icon" href="images/favicon/favicon-32.png" sizes="32x32" type="image/png">
-  <link rel="icon" href="images/favicon/favicon-16.png" sizes="16x16" type="image/png">
-  <link rel="apple-touch-icon" href="images/favicon/apple-touch-icon-180.png">
-  <link rel="manifest" href="images/favicon/site.webmanifest">
-  <meta name="theme-color" content="#03050b">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link rel="preload" href="assets/fonts/plate-display.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="assets/fonts/plate-text.woff2" as="font" type="font/woff2" crossorigin>
-  <link href="assets/css/snapfolio-astro.css?v=4" rel="stylesheet">
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Tanmay Singh",
-    "jobTitle": "Astrophysics PhD Student",
-    "affiliation": {
-      "@type": "CollegeOrUniversity",
-      "name": "Arizona State University"
-    },
-    "email": "mailto:tsingh65@asu.edu",
-    "url": "https://tanmay-starslab.github.io/",
-    "image": "https://tanmay-starslab.github.io/images/headshot_tanmay.jpeg",
-    "sameAs": [
-      "https://scholar.google.com/citations?user=Sfeb8fMAAAAJ&hl=en",
-      "https://github.com/tanmay-starslab",
-      "https://www.linkedin.com/in/tanmay-singh-21574a1aa/",
-      "https://x.com/TanmayS32807693",
-      "https://www.instagram.com/newhorizons_2/"
-    ]
-  }
-  </script>
-
-  <!-- =======================================================
-  * Template Name: SnapFolio
-  * Template URL: https://bootstrapmade.com/snapfolio-bootstrap-portfolio-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  * Adapted for Tanmay Singh's academic astrophysics website.
-  ======================================================== -->
-  <script>
-    /* The intro is progressive enhancement. The classes that hide page content
-       are added here by script rather than shipped in the HTML, so if scripting
-       is unavailable the page renders fully visible instead of blank. The
-       timeout is a failsafe for when snapfolio-astro.js is blocked or throws. */
-    (function () {
-      var el = document.documentElement;
-      /* Arm the scroll-reveal gate, but only provisionally. snapfolio-astro.js
-         sets window.__revealReady once its observer is actually attached; if
-         that never happens -- the script 404s, is cached stale, or throws --
-         this watchdog disarms the gate and the page renders in full. Without
-         it, gating on "some script ran" is not the same as "the reveal system
-         works", and the page still ends up blank. */
-      // "js" is unconditional and permanent: it is the hook that lets CSS hide
-      // elements that are meaningless without scripting. Its only consumers
-      // today are html:not(.js) rules for the PARKED sightline canvas and rail
-      // (see parked/sightline/README.md), so on the page as it currently ships
-      // this class gates nothing — it is kept because removing it would break
-      // that component's restore path, and because the next JS-dependent
-      // element will want it. It is deliberately NOT js-reveal, which the
-      // watchdog below removes.
-      el.classList.add("js");
-      // The stored motion preference is applied BEFORE first paint. Read it
-      // later — from a deferred script — and the reader who asked for no
-      // motion gets one frame of the intro animation first, which is the
-      // one frame they specifically asked not to see.
-      try {
-        if (window.localStorage && localStorage.getItem("motion") === "off") {
-          el.classList.add("motion-off");
-        }
-      } catch (e) { /* private mode, blocked storage: motion simply stays on */ }
-      el.classList.add("js-reveal");
-      window.setTimeout(function () {
-        if (!window.__revealReady) el.classList.remove("js-reveal");
-      }, 800);
-      try {
-        if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-        el.classList.add("intro-active", "intro-hold");
-        window.setTimeout(function () {
-          if (!el.classList.contains("intro-active")) return;
-          el.classList.remove("intro-active", "intro-hold", "intro-moving");
-          el.classList.add("intro-complete");
-        }, 2500);
-      } catch (e) {
-        el.classList.remove("intro-active", "intro-hold");
-      }
-    })();
-  </script>
+  <title>Rishant Prakash — Cosmochemistry & Planetary Origins</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="main.js"></script>
 </head>
-
 <body>
-  <a class="skip-link" href="#main">Skip to main content</a>
-  <div class="cosmic-image-bg" aria-hidden="true"></div>
-  <div class="cosmic-image-shade" aria-hidden="true"></div>
-  <canvas id="galaxy-canvas" aria-hidden="true"></canvas>
-  <div class="cosmic-vignette" aria-hidden="true"></div>
-  <div class="deep-grain" aria-hidden="true"></div>
-
-  <header id="header" class="site-header" aria-label="Primary navigation">
-    <button class="header-toggle" type="button" aria-label="Open navigation" aria-controls="navmenu" aria-expanded="false">
-      <i class="bi bi-list" aria-hidden="true"></i>
-    </button>
-
-    <div class="header-container">
-      <a class="brand-lockup" href="#home" aria-label="Tanmay Singh home">
-        <span class="brand-mark image-mark"><img src="images/headshot-96.webp" alt="" aria-hidden="true" width="96" height="96" decoding="async"></span>
-        <span>
-          <strong>Tanmay Singh</strong>
-          <small>Astrophysics PhD Student</small>
-        </span>
-      </a>
-
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="#home" class="active"><i class="bi bi-house navicon" aria-hidden="true"></i><span>Home</span></a></li>
-          <li><a href="#about"><i class="bi bi-person navicon" aria-hidden="true"></i><span>About</span></a></li>
-          <li><a href="#research"><i class="bi bi-stars navicon" aria-hidden="true"></i><span>Research</span></a></li>
-          <li><a href="#past-projects"><i class="bi bi-grid-3x3-gap navicon" aria-hidden="true"></i><span>Past Projects</span></a></li>
-          <li><a href="#publications"><i class="bi bi-journal-text navicon" aria-hidden="true"></i><span>Publications</span></a></li>
-          <li><a href="#timeline"><i class="bi bi-diagram-3 navicon" aria-hidden="true"></i><span>Education</span></a></li>
-          <li><a href="#personal-interests"><i class="bi bi-compass navicon" aria-hidden="true"></i><span>Personal Interests</span></a></li>
-          <li><a href="useful-links.html"><i class="bi bi-link-45deg navicon" aria-hidden="true"></i><span>Useful Links</span></a></li>
-          <li><a href="#contact"><i class="bi bi-envelope navicon" aria-hidden="true"></i><span>Contact</span></a></li>
-        </ul>
-      </nav>
-
-      <!-- A real toggle, not a media query. prefers-reduced-motion is an OS
-           setting, and plenty of people want a calmer version of one page
-           without changing it for their whole machine. aria-pressed carries
-           the state; the label says what the button DOES. -->
-      <p class="motion-toggle-row">
-        <button type="button" class="motion-toggle" id="motion-toggle" aria-pressed="false">
-          <i class="bi bi-activity" aria-hidden="true"></i>
-          <span>Reduce motion</span>
-        </button>
-      </p>
-
-      <div class="social-links" aria-label="Profile links">
-        <a href="mailto:tsingh65@asu.edu" aria-label="Email Tanmay Singh"><i class="bi bi-envelope" aria-hidden="true"></i></a>
-        <a href="https://scholar.google.com/citations?user=Sfeb8fMAAAAJ&hl=en" target="_blank" rel="noopener" aria-label="Tanmay Singh on Google Scholar"><i class="bi bi-mortarboard" aria-hidden="true"></i></a>
-        <a href="https://github.com/tanmay-starslab" target="_blank" rel="noopener" aria-label="Tanmay Singh on GitHub"><i class="bi bi-github" aria-hidden="true"></i></a>
-        <a href="https://www.linkedin.com/in/tanmay-singh-21574a1aa/" target="_blank" rel="noopener" aria-label="Tanmay Singh on LinkedIn"><i class="bi bi-linkedin" aria-hidden="true"></i></a>
-      </div>
-    </div>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Rishant Prakash, home"><span class="brand-orbit" aria-hidden="true">r<span>p</span></span><span>Rishant Prakash<span class="brand-sub">COSMOCHEMISTRY & PLANETARY ORIGINS</span></span></a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="navigation">Menu <span aria-hidden="true">＋</span></button>
+    <nav id="navigation" aria-label="Main navigation"><a href="#about">About</a><a href="#research">Research</a><a href="#isotope-lab">Isotope lab <span class="nav-dot" aria-hidden="true"></span></a><a href="#journey">Journey</a><a class="nav-cv" href="assets/Rishant-Prakash-CV.pdf" target="_blank" rel="noopener">CV <span aria-hidden="true">↗</span></a></nav>
   </header>
+  <main id="main">
+    <section class="hero section-shell" id="home" aria-labelledby="hero-title">
+      <div class="hero-content">
+        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> UNIVERSITY OF CENTRAL FLORIDA · PLANETARY & SPACE SCIENCES</p>
+        <h1 id="hero-title">Small grains.<br><em>Cosmic stories.</em></h1>
+        <p class="hero-intro">I’m Rishant, a planetary science Ph.D. student exploring how<br class="desktop-break"> the Solar System came to be—<br class="desktop-break">one isotope at a time.</p>
+        <div class="hero-actions"><a class="button primary" href="#research">Explore my research <span aria-hidden="true">↗</span></a><a class="text-link" href="#isotope-lab">Play with isotopes <span aria-hidden="true">→</span></a></div>
+        <div class="hero-note"><span class="tiny-cross" aria-hidden="true">+</span><p>From stardust to meteorites.<br>From the clean lab to the cosmos.</p></div>
+      </div>
+      <figure class="cosmic-figure">
+        <div class="orbital-grid" aria-hidden="true"><span></span><span></span><span></span><i></i></div>
+        <img class="bennu" src="assets/bennu.jpg" width="2304" height="2932" alt="Bennu’s rough, boulder-covered surface, visualized from NASA OSIRIS-REx imagery and laser altimetry." fetchpriority="high">
+        <div class="specimen-top mono"><span>SPECIMEN / 101955</span><span>↗</span></div>
+        <button class="hotspot hotspot-one" data-story="asteroids" aria-controls="story-panel" aria-expanded="false"><span class="hotspot-dot" aria-hidden="true">+</span><span>Asteroids</span></button>
+        <button class="hotspot hotspot-two" data-story="meteorites" aria-controls="story-panel" aria-expanded="false"><span class="hotspot-dot" aria-hidden="true">+</span><span>Meteorites</span></button>
+        <button class="hotspot hotspot-three" data-story="isotopes" aria-controls="story-panel" aria-expanded="false"><span class="hotspot-dot" aria-hidden="true">+</span><span>Isotopes</span></button>
+        <figcaption><span class="mono">BENNU</span><span>A small world. A record of our origins.</span><a href="https://svs.gsfc.nasa.gov/4886" target="_blank" rel="noopener">NASA SVS imagery ↗</a></figcaption>
+      </figure>
+      <div class="hero-bottom mono"><a href="#about">SCROLL TO EXPLORE <span aria-hidden="true">↓</span></a><span>ROCKS HOLD MEMORIES. ISOTOPES HELP US READ THEM.</span><span>01 / 05</span></div>
+    </section>
 
-  <main id="main" class="main">
-    <section id="home" class="hero section" aria-labelledby="hero-title">
-      <div class="hero-nebula" aria-hidden="true"></div>
-      <div class="container">
-        <div class="hero-shell">
-          <div class="hero-copy reveal">
-            <p class="eyebrow">
-              <a href="https://www.asu.edu/" target="_blank" rel="noopener">Arizona State University</a>
-              <span>|</span>
-              <a href="https://sese.asu.edu/" target="_blank" rel="noopener">School of Earth and Space Exploration</a>
-            </p>
-            <h1 id="hero-title">Tanmay Singh</h1>
-            <p class="hero-role">Fourth Year Ph.D. Candidate | Astrophysics</p>
-            <p class="hero-subtitle">
-              Hi! I am Tanmay, currently a PhD student in the <a href="https://sese.asu.edu/" target="_blank" rel="noopener">School of Earth and Space Exploration</a>
-              at <a href="https://www.asu.edu/" target="_blank" rel="noopener">Arizona State University</a>, advised by
-              <a href="http://borthakur.asu.edu/index.html" target="_blank" rel="noopener">Prof. Sanchayeeta Borthakur</a>.
-              My research interests lie broadly in galaxy formation and processes that impact their evolution.
-            </p>
-            <div class="hero-actions" aria-label="Primary actions">
-              <a class="btn btn-primary" href="#research"><i class="bi bi-stars" aria-hidden="true"></i> Research</a>
-              <a class="btn btn-outline" href="#publications"><i class="bi bi-journal-text" aria-hidden="true"></i> Publications</a>
-              <a class="btn btn-outline" href="files/cv.pdf" target="_blank" rel="noopener"><i class="bi bi-file-earmark-arrow-down" aria-hidden="true"></i> Download CV</a>
-            </div>
-            <div class="hero-links" aria-label="Quick links">
-              <a href="mailto:tsingh65@asu.edu">tsingh65@asu.edu</a>
-              <a href="https://scholar.google.com/citations?user=Sfeb8fMAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
-              <a href="https://github.com/tanmay-starslab" target="_blank" rel="noopener">GitHub</a>
-              <a href="https://www.linkedin.com/in/tanmay-singh-21574a1aa/" target="_blank" rel="noopener">LinkedIn</a>
-            </div>
-          </div>
+    <section class="about section-shell light-section" id="about" aria-labelledby="about-title">
+      <div class="section-label"><span>01 — A LITTLE CONTEXT</span><span aria-hidden="true">✳</span></div>
+      <div class="about-layout"><h2 id="about-title">Big questions.<br><span class="muted-light">Very small clues.</span></h2><div class="about-copy"><p class="large-copy">How do the smallest grains of rock preserve the history of our Solar System?</p><p>I’m a Ph.D. student in Planetary and Space Sciences at the University of Central Florida. My previous research at Arizona State University’s School of Earth and Space Exploration brought together high-precision measurements of meteoritic materials and models of the stars that made their ingredients.</p><p>I’m especially interested in the origin and volatile depletion of the Solar System, high- and low-temperature geochemistry, and the mass spectrometers that make these investigations possible.</p><a class="text-link dark-link" href="assets/Rishant-Prakash-CV.pdf" target="_blank" rel="noopener">Read my full CV <span aria-hidden="true">↗</span></a></div></div>
+      <div class="discipline-line"><span>METEORITES</span><i>✳</i><span>ISOTOPE GEOCHEMISTRY</span><i>✳</i><span>STELLAR ORIGINS</span></div>
+    </section>
 
-          <figure class="hero-portrait reveal">
-            <div class="plate-light" aria-hidden="true"></div>
-            <div class="portrait-halo" aria-hidden="true"></div>
-            <img src="images/headshot-900.webp" alt="Portrait of Tanmay Singh" width="900" height="900" loading="eager" fetchpriority="high" decoding="async">
-            <figcaption class="plate-label">
-              <span class="plate-id">Plate&nbsp;I</span>
-              <span class="plate-meta">T.&nbsp;Singh &middot; ASU SESE &middot; 2026</span>
-              <span class="plate-dim">900 &times; 900 px</span>
-            </figcaption>
-          </figure>
-        </div>
+    <section class="research section-shell" id="research" aria-labelledby="research-title">
+      <div class="section-label"><span>02 — RESEARCH IN FOCUS</span><span>FROM GRAIN TO GALAXY</span></div>
+      <div class="section-heading"><h2 id="research-title">Following the<br><em>chemical clues.</em></h2><p>Different scales. One connected story.<br>Explore the questions behind my work.</p></div>
+      <div class="research-list">
+        <details class="research-item" open><summary><span class="research-number">01</span><span class="research-name">Isotopic fingerprints<br> of the solar nebula<small>Ti ISOTOPES · CAIs · ANALYTICAL METHODS</small></span><span class="research-date">ASU · FROM 2023</span><span class="expand-mark" aria-hidden="true">+</span></summary><div class="research-body"><div class="isotope-tile" aria-label="Titanium, atomic number 22"><span>22</span><strong>Ti</strong><span>TITANIUM</span><div>46 · 47 · 48 · 49 · 50</div></div><div><p>At ASU, I worked on in-situ protocols for high-precision titanium isotope measurements in calcium–aluminum-rich inclusions (CAIs), including FUN CAIs. These tiny components can preserve clues to the materials that entered the solar nebula.</p><p>My laboratory work included laser-ablation multicollector ICP-MS, synthesizing Ti-doped CMAS glass standards, and clean-lab chemistry for magnesium purification.</p><p class="research-meta">Previous research with Prof. Meenakshi Wadhwa · Arizona State University</p></div></div></details>
+        <details class="research-item"><summary><span class="research-number">02</span><span class="research-name">Stardust &<br> exploding stars<small>PRESOLAR GRAINS · Ti & Cr · 3D MODELS</small></span><span class="research-date">ASU · FROM 2024</span><span class="expand-mark" aria-hidden="true">+</span></summary><div class="research-body"><div class="research-symbol" aria-hidden="true">✺</div><div><p>At ASU, I used three-dimensional core-collapse supernova models to investigate the titanium and chromium isotope signatures observed in presolar oxide grains.</p><p>By examining explosive nucleosynthesis, mixing, and fallback, and comparing models with laboratory NanoSIMS measurements, I investigated where these grains’ isotopic signatures may have originated.</p><p class="research-meta">Previous research with Prof. Patrick Young & Prof. Larry Nittler · Arizona State University</p></div></div></details>
+        <details class="research-item"><summary><span class="research-number">03</span><span class="research-name">What dissolving<br> a rock can reveal<small>SILICATE WEATHERING · EXPERIMENTAL GEOCHEMISTRY</small></span><span class="research-date">2021 — 2023</span><span class="expand-mark" aria-hidden="true">+</span></summary><div class="research-body"><div class="research-symbol chemical-symbol" aria-hidden="true">SiO₂</div><div><p>At the Indian Institute of Science, I investigated how cations move during silicate weathering through acid-leaching experiments on rocks ranging from ultramafic to felsic compositions.</p><p>This work included non-HF acid digestion, High-Pressure Asher experiments, and geochemical characterization of the Sadiya meteorite to investigate its classification.</p><p class="research-meta">With Prof. Ramananda Chakrabarti · IISc, Bengaluru</p><a class="text-link" id="thesis-link" href="https://drive.google.com/file/d/1wsSoGLjzhi1VKke4VruKjQ96NDy-px-Q/view" target="_blank" rel="noopener">Read my thesis ↗</a></div></div></details>
+        <details class="research-item"><summary><span class="research-number">04</span><span class="research-name">Ancient aggregates,<br> different histories<small>AOAs · MUKUNDPURA · ALLENDE</small></span><span class="research-date">SUMMER 2022</span><span class="expand-mark" aria-hidden="true">+</span></summary><div class="research-body"><div class="grain-symbol" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div><div><p>I investigated amoeboid olivine aggregates in the Mukundpura and Allende chondrites using electron-probe microanalysis.</p><p>Comparing mineral chemistry and textures offered a way to explore nebular processing and the different alteration histories recorded by these meteorites.</p><p class="research-meta">With Dr. Dipak Panda · Physical Research Laboratory, Ahmedabad</p></div></div></details>
       </div>
     </section>
 
-    <section id="about" class="section about" aria-labelledby="about-title">
-      <div class="container">
-        <div class="section-heading reveal">
-          <p class="eyebrow">About</p>
-          <h2 data-split id="about-title">Academic background and current focus.</h2>
+    <section class="isotope-lab section-shell" id="isotope-lab" aria-labelledby="lab-title">
+      <div class="section-label"><span>03 — THE INTERACTIVE LAB</span><span class="lab-status"><span class="status-dot" aria-hidden="true"></span> YOUR TURN TO EXPERIMENT</span></div>
+      <div class="section-heading"><h2 id="lab-title">A tiny difference.<br><em>A lasting signature.</em></h2><p>Isotopes of an element have different masses.<br>When material leaves a reservoir, its isotope<br class="desktop-break"> ratio can change. Try it for yourself.</p></div>
+      <div class="lab-workbench">
+        <div class="lab-controls"><div class="mini-label">EXPERIMENT 001 / RAYLEIGH FRACTIONATION</div><h3>What gets left behind?</h3><p>Adjust how much remains and how strongly removal separates the isotopes.</p>
+          <div class="control-row"><label for="fraction">Reservoir remaining, <i>f</i></label><output id="fraction-value" for="fraction">50%</output></div><input id="fraction" type="range" min="5" max="100" step="1" value="50"><div class="range-labels"><span>5% remains</span><span>100% remains</span></div>
+          <div class="control-row"><label for="alpha">Fractionation factor, <i>α</i></label><output id="alpha-value" for="alpha">0.995</output></div><input id="alpha" type="range" min="980" max="1020" step="1" value="995"><div class="range-labels"><span>Light leaves first</span><span>Heavy leaves first</span></div>
+          <div class="preset-list" aria-label="Experiment presets"><button data-preset="evaporation" aria-pressed="true">Light leaves</button><button data-preset="none" aria-pressed="false">No separation</button><button data-preset="reverse" aria-pressed="false">Heavy leaves</button></div>
+          <button class="reset-button" id="reset-lab">↺ Reset experiment</button>
         </div>
-
-        <div class="about-panel reveal">
-          <div class="about-text">
-            <p>
-              Prior to coming to ASU, I completed my B.Tech in Engineering Physics from the
-              <a href="https://en.wikipedia.org/wiki/IIT_Delhi" target="_blank" rel="noopener">Indian Institute of Technology Delhi</a> in July 2023.
-              I also worked as a visiting student at the <a href="https://en.wikipedia.org/wiki/Raman_Research_Institute" target="_blank" rel="noopener">Raman Research Institute</a>
-              in Bangalore from May to July 2022. I was born and brought up in <a href="https://en.wikipedia.org/wiki/Lucknow" target="_blank" rel="noopener">Lucknow, India</a>.
-            </p>
-            <p>
-              My current research uses cosmological simulations and synthetic quasar absorption spectra to study gas associated with galaxies and galaxy groups.
-              I also work on probabilistic spectral classification of AGN and supernovae using <a href="https://bayesianlogic.github.io/" target="_blank" rel="noopener">Bayesian logic</a>.
-              You can read more about the current projects in the <a href="#research">research section</a>, and about non-academic interests under <a href="#personal-interests">Personal Interests</a>.
-            </p>
-          </div>
-          <dl class="fact-grid" aria-label="Quick facts">
-            <div><dt>Current role</dt><dd>Ph.D. Student in Astrophysics</dd></div>
-            <div><dt>Institution</dt><dd>Arizona State University</dd></div>
-            <div><dt>School</dt><dd>School of Earth and Space Exploration</dd></div>
-            <div><dt>Undergraduate</dt><dd>B.Tech, Engineering Physics, IIT Delhi</dd></div>
-          </dl>
-        </div>
+        <div class="lab-results"><div class="result-header"><div><span class="mini-label">CHANGE IN RESIDUAL ISOTOPE RATIO</span><div class="delta"><output id="delta-value" for="fraction alpha">+3.47</output><span>‰</span></div></div><span class="experiment-tag">ILLUSTRATIVE MODEL</span></div><svg id="isotope-chart" viewBox="0 0 640 320" role="img" aria-label="Residual isotope enrichment against fraction remaining"></svg><p class="lab-explanation" id="lab-explanation" aria-live="polite">Lighter isotopes leave preferentially. The material left behind becomes enriched in the heavier isotope.</p></div>
       </div>
+      <details class="model-notes"><summary>The science behind the sliders <span aria-hidden="true">+</span></summary><div><p class="equation">R / R₀ = f<sup>(α − 1)</sup> &nbsp; · &nbsp; Δ = 1000 × (R / R₀ − 1)</p><p><i>R</i> is the heavy/light isotope ratio; <i>α</i> = R<sub>removed</sub> / R<sub>remaining</sub>. Δ is the change relative to the starting ratio, in parts per thousand (‰). Strictly, <i>f</i> is the fraction of the light isotope remaining; it approximates the bulk reservoir fraction when the heavy isotope is rare.</p><p>This idealized Rayleigh model assumes a well-mixed reservoir, constant α, and continuous removal without re-equilibration, addition, or mixing. These are illustrative parameters, not measurements from a meteorite. Nucleosynthetic anomalies—the focus of much of my research—record different source histories and are distinct from the mass-dependent fractionation illustrated here.</p><a href="https://ocw.mit.edu/courses/12-119-analytical-techniques-for-studying-environmental-and-geologic-samples-spring-2011/e7ace2638d7b86bab91eb63ea19f524b_MIT12_119S11_PSet2.pdf" target="_blank" rel="noopener">Explore the Rayleigh model · MIT OpenCourseWare ↗</a></div></details>
+      <noscript><p>The interactive experiment needs JavaScript. The default example is f = 0.5, α = 0.995, giving Δ = +3.47‰. The equation and assumptions above remain available.</p></noscript>
     </section>
 
-    <section id="research" class="section research" aria-labelledby="research-title">
-      <div class="container">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Research</p>
-          <h2 data-split id="research-title">Ongoing research projects.</h2>
-        </div>
-
-        <div class="research-grid">
-          <article class="research-card featured reveal">
-            <div class="card-glow" aria-hidden="true"></div>
-            <span class="card-kicker">IGM / CGM</span>
-            <h3>Investigating the IGM and CGM</h3>
-            <p>
-              The intergalactic medium and circumgalactic medium play crucial roles in the formation and evolution of galaxies.
-              One primary research goal is to understand how Mg II absorbers observed in the spectra of background quasars are connected to galaxies.
-            </p>
-            <p>
-              By analyzing mock quasar absorption spectra generated from cosmological simulations such as IllustrisTNG and SIMBA,
-              this work asks whether absorbers originate from outflowing material expelled by star-forming galaxies or from large rotating disks accreting material onto galaxies.
-            </p>
-            <div class="tag-cloud">
-              <span>Mg II absorbers</span>
-              <span>IllustrisTNG</span>
-              <span>SIMBA</span>
-              <span>Mock spectra</span>
-            </div>
-          </article>
-
-          <article class="research-card reveal">
-            <span class="card-kicker">O VI</span>
-            <h3>O VI in the Intra-group Medium</h3>
-            <p>
-              Compares O VI absorption in synthetic spectra from SIMBA and TNG50 galaxy groups against COS-IGrM observations.
-              The analysis uses matched group samples and observation-like synthetic spectroscopy to study absorber distributions, kinematics, covering fractions, and galaxy associations.
-            </p>
-            <div class="tag-cloud">
-              <span>SIMBA</span>
-              <span>IllustrisTNG</span>
-              <span>COS-IGrM</span>
-              <span>XGBoost</span>
-            </div>
-          </article>
-
-          <article class="research-card reveal">
-            <span class="card-kicker">Spectra</span>
-            <h3>Spectral Classification of AGN and Supernovae</h3>
-            <p>
-              Distinguishing between spectral signatures of Active Galactic Nuclei and Supernovae is essential for characterizing transient astrophysical events.
-              This work uses Bayesian logic (BLOG) to develop automated methods for spectral classification.
-            </p>
-            <div class="tag-cloud">
-              <span>AGN</span>
-              <span>Supernovae</span>
-              <span>BLOG</span>
-              <span>Classification</span>
-            </div>
-          </article>
-
-          <article class="research-card reveal">
-            <span class="card-kicker">Kinematics</span>
-            <h3>Kinematics of the Outer Circumgalactic Medium</h3>
-            <p>
-              Investigating co-rotation and counter-rotation of outer CGM gas around L-star galaxies using sightline-based synthetic spectroscopy in TNG50-1.
-            </p>
-            <div class="tag-cloud">
-              <span>TNG50-1</span>
-              <span>Ly-alpha</span>
-              <span>C II</span>
-              <span>Si III</span>
-            </div>
-          </article>
-        </div>
-      </div>
+    <section class="journey section-shell light-section" id="journey" aria-labelledby="journey-title">
+      <div class="section-label"><span>04 — THE PATH SO FAR</span><span>DELHI → BENGALURU → ARIZONA → FLORIDA</span></div>
+      <div class="journey-layout"><div><h2 id="journey-title">Grounded in geology.<br><span class="muted-light">Looking outward.</span></h2><p>From mapping rocks in the field to measuring their isotopic signatures in the lab.</p><div class="skill-notes"><span>TOOLS OF THE TRADE</span><p>LA-MC-ICP-MS · EPMA · SEM<br>Clean-lab chemistry · Gas-mixing furnace<br>Python · C++ · GIS</p></div></div><ol class="education"><li><span class="education-date">CURRENT</span><h3>University of Central Florida</h3><p>Ph.D. student in Planetary and Space Sciences</p><small>Planetary science & cosmochemistry</small></li><li><span class="education-date">FROM 2023 · PREVIOUS</span><h3>Arizona State University</h3><p>M.S. studies in Geological Sciences</p><small>School of Earth and Space Exploration</small></li><li><span class="education-date">2021 — 2023</span><h3>Indian Institute of Science</h3><p>M.Tech. in Earth Sciences</p><small>Bengaluru, India</small></li><li><span class="education-date">2019 — 2021</span><h3>University of Delhi</h3><p>M.Sc. in Geology</p><small>Hansraj College</small></li><li><span class="education-date">2016 — 2019</span><h3>University of Delhi</h3><p>B.Sc. in Geology</p><small>Hansraj College</small></li></ol></div>
+      <div class="contributions"><div class="contributions-heading"><h3>Selected contributions</h3><span>MEETINGS, POSTERS & CLASSIFICATION</span></div><div class="contribution"><span>2026</span><div><h4>Presolar oxide grains as probes for symmetric and asymmetric core-collapse supernova explosions</h4><p>Prakash, R. & Young, P. · 247th AAS Meeting · Conference contribution</p></div></div><div class="contribution"><span>2025</span><div><h4>Santa María del Oro (IIIAB, Iron), Durango, Mexico</h4><p>Campbell, A., Prakash, R., et al. · Meteoritical Bulletin, No. 114 · Classification entry</p><a id="meteorite-link" href="https://www.lpi.usra.edu/meteor/metbull.cfm?code=85276" target="_blank" rel="noopener">View meteorite classification ↗</a></div></div><div class="contribution"><span>2025</span><div><h4>Origin and distribution of Ti nucleosynthetic anomalies in the solar nebula</h4><p>Prakash, R., Rai, V. K., Aigner, M., Hines, R. & Wadhwa, M. · SESE Symposium · Poster</p></div></div><div class="contribution"><span>2022</span><div><h4>Amoeboid olivine aggregates in Mukundpura and Allende chondrites</h4><p>Prakash, R. & Panda, D. · MetMESS · Conference presentation</p><a id="metmess-link" href="https://www.prl.res.in/~plas/metmess22/Abstracts-Session-1.pdf" target="_blank" rel="noopener">Read abstract S1-09 ↗</a></div></div></div>
+      <div class="beyond-lab"><div><span class="mini-label">BEYOND THE LAB</span><h3>Science is better<br>when it’s shared.</h3></div><div><p>Through the Buseck Center for Meteorite Studies outreach program at ASU and IISc Open Day, I’ve shared the stories of rocks and meteorites with people from many backgrounds.</p><p>I also bring a background in photography, student journalism, and volunteer teaching—other ways to observe carefully and make ideas accessible.</p></div></div>
     </section>
 
-    <section id="past-projects" class="section past-projects" aria-labelledby="projects-title">
-      <div class="container">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Past Projects</p>
-          <h2 data-split id="projects-title">Earlier research across physics and astronomy.</h2>
-          <p>Past work spanning submillimeter astronomy, solar physics, quantum communication, image processing, and atomic collisions.</p>
-        </div>
-
-        <div class="project-mosaic">
-          <article class="project-card large reveal">
-            <div class="project-visual visual-site" aria-hidden="true"></div>
-            <div class="project-body">
-              <span class="card-kicker">Raman Research Institute</span>
-              <h3>Preliminary site quality analysis for an Indian sub-millimeter telescope</h3>
-              <p>
-                Evaluated prospective sites in the Ladakh region using global PWV and other datasets from NASA and ECMWF.
-                The work used pandas, NumPy, SciPy, matplotlib, and QGIS for site-quality analysis.
-              </p>
-              <div class="tag-cloud">
-                <span>Submillimeter astronomy</span>
-                <span>PWV</span>
-                <span>ECMWF</span>
-                <span>QGIS</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card reveal">
-            <div class="project-visual visual-solar" aria-hidden="true"></div>
-            <div class="project-body">
-              <span class="card-kicker">Senior thesis</span>
-              <h3>Magnetic field topology and properties of solar coronal lines</h3>
-              <p>
-                Cleaned and aligned images from the Total Solar Eclipse (2017), retrieved magnetic field lines using RHT and ACF,
-                and compared the topology with Magneto-Hydrodynamics equations.
-              </p>
-              <div class="tag-cloud">
-                <span>Solar physics</span>
-                <span>RHT</span>
-                <span>ACF</span>
-                <span>MHD</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card reveal">
-            <div class="project-visual visual-qkd" aria-hidden="true"></div>
-            <div class="project-body">
-              <span class="card-kicker">SURA project</span>
-              <h3>Post-processing and applications in quantum secure communication</h3>
-              <p>
-                Developed optimized software for post-processing in entanglement-based Quantum Key Distribution, including reconciliation,
-                cascade variants, privacy amplification, networking, and lab-data verification.
-              </p>
-              <div class="tag-cloud">
-                <span>Quantum key distribution</span>
-                <span>Python</span>
-                <span>Reconciliation</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card reveal">
-            <div class="project-visual visual-waves" aria-hidden="true"></div>
-            <div class="project-body">
-              <span class="card-kicker">Solar data</span>
-              <h3>Identifying acoustic wave sources on the Sun</h3>
-              <p>
-                Studied acoustic waves on the solar surface using simulated MURAM data and image-processing techniques such as azimuthal averaging with OpenCV, NumPy, and matplotlib.
-              </p>
-              <div class="tag-cloud">
-                <span>MURAM</span>
-                <span>OpenCV</span>
-                <span>Image processing</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card reveal">
-            <div class="project-visual visual-fano" aria-hidden="true"></div>
-            <div class="project-body">
-              <span class="card-kicker">Atomic collisions</span>
-              <h3>Angular dependence of Fano profile in ultra-cold atomic collisions</h3>
-              <p>
-                Studied Fano profiles in cold atomic collisions such as H-Kr and analyzed how Fano parameters depend on scattering angle using Python and Code Ocean.
-              </p>
-              <div class="tag-cloud">
-                <span>Fano profiles</span>
-                <span>Cold atomic collisions</span>
-                <span>Python</span>
-              </div>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="publications" class="section publications" aria-labelledby="publications-title">
-      <div class="container">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Publications</p>
-          <h2 data-split id="publications-title">Publications and abstracts.</h2>
-          <p>Selected entries from Google Scholar and the current CV.</p>
-        </div>
-
-        <div class="publication-tools reveal">
-          <a class="btn btn-primary" href="https://scholar.google.com/citations?user=Sfeb8fMAAAAJ&hl=en" target="_blank" rel="noopener">
-            <i class="bi bi-mortarboard" aria-hidden="true"></i> Google Scholar
-          </a>
-        </div>
-
-        <div class="publication-list">
-          <article class="publication-card reveal">
-            <div class="publication-meta"><span>2026</span><span>arXiv preprint arXiv:2604.18808</span></div>
-            <h3>Analysis of synthetic OVI absorption associated with galaxy groups in SIMBA and TNG50 simulations</h3>
-            <p>T Singh, S Borthakur, D Nelson, R Dav&eacute;, T McCabe</p>
-            <div class="publication-actions">
-              <a class="chip-link" href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Sfeb8fMAAAAJ&citation_for_view=Sfeb8fMAAAAJ:2osOgNQ5qMEC" target="_blank" rel="noopener">Scholar</a>
-              <a class="chip-link" href="https://arxiv.org/abs/2604.18808" target="_blank" rel="noopener">arXiv</a>
-            </div>
-          </article>
-
-          <article class="publication-card reveal">
-            <div class="publication-meta"><span>2026</span><span>arXiv preprint arXiv:2604.13487</span></div>
-            <h3>Site Quality Analysis for an Indian Submillimeter Telescope: A Reanalysis-Based Approach</h3>
-            <p>T Singh, MS Rao, RB Thakur</p>
-            <div class="publication-actions">
-              <a class="chip-link" href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Sfeb8fMAAAAJ&citation_for_view=Sfeb8fMAAAAJ:9yKSN-GCB0IC" target="_blank" rel="noopener">Scholar</a>
-              <a class="chip-link" href="https://arxiv.org/abs/2604.13487" target="_blank" rel="noopener">arXiv</a>
-            </div>
-          </article>
-
-          <article class="publication-card reveal">
-            <div class="publication-meta"><span>2026</span><span>Indian Journal of Physics</span></div>
-            <h3>Scattering angle dependence of Fano resonance profiles in cold atomic collisions analyzed with the complex valued w parameter: T Singh et al.</h3>
-            <p>T Singh, RA Singh, F Koike, M Iizawa, Y Azuma</p>
-            <div class="publication-actions">
-              <a class="chip-link" href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Sfeb8fMAAAAJ&citation_for_view=Sfeb8fMAAAAJ:u5HHmVD_uO8C" target="_blank" rel="noopener">Scholar</a>
-              <a class="chip-link" href="https://arxiv.org/abs/2507.17674" target="_blank" rel="noopener">arXiv</a>
-            </div>
-          </article>
-
-          <article class="publication-card reveal">
-            <div class="publication-meta"><span>2026</span><span>American Astronomical Society Meeting Abstracts 247, 174.05</span></div>
-            <h3>Analysis of synthetic O VI absorption in galaxy groups of SIMBA and IllustrisTNG simulations</h3>
-            <p>T Singh, S Borthakur, D Nelson, T McCabe</p>
-            <div class="publication-actions">
-              <a class="chip-link" href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Sfeb8fMAAAAJ&citation_for_view=Sfeb8fMAAAAJ:d1gkVwhDpl0C" target="_blank" rel="noopener">Scholar</a>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="timeline" class="section timeline-section" aria-labelledby="timeline-title">
-      <div class="container">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Education</p>
-          <h2 data-split id="timeline-title">Education</h2>
-        </div>
-
-        <div class="timeline" data-timeline>
-          <div class="timeline-track" aria-hidden="true">
-            <div class="timeline-fill"></div>
-          </div>
-
-          <article class="timeline-item reveal">
-            <span class="timeline-date">Aug 2023 - Present</span>
-            <div class="timeline-content">
-              <h3>Ph.D. in Astrophysics</h3>
-              <p class="timeline-org">Arizona State University | School of Earth and Space Exploration</p>
-              <p>Current graduate research includes O VI in the intra-group medium, spectral classification of AGN and supernovae, and kinematics of the outer circumgalactic medium.</p>
-            </div>
-          </article>
-
-          <article class="timeline-item reveal">
-            <span class="timeline-date">May 2022 - July 2022</span>
-            <div class="timeline-content">
-              <h3>Visiting Research Intern</h3>
-              <p class="timeline-org">Raman Research Institute | Astronomy and Astrophysics Department</p>
-              <p>Worked on preliminary site-quality analysis for an Indian sub-millimeter telescope.</p>
-            </div>
-          </article>
-
-          <article class="timeline-item reveal">
-            <span class="timeline-date">July 2019 - July 2023</span>
-            <div class="timeline-content">
-              <h3>B.Tech. in Engineering Physics</h3>
-              <p class="timeline-org">Indian Institute of Technology Delhi</p>
-              <p>Undergraduate training in engineering physics, with research spanning solar physics, quantum secure communication, atomic collisions, and submillimeter astronomy.</p>
-            </div>
-          </article>
-        </div>
-
-        <div class="teaching-panel reveal">
-          <div>
-            <p class="eyebrow">Teaching</p>
-            <h3>AST 112 Lab</h3>
-          </div>
-          <p><strong>Course:</strong> AST 112 Lab, Lab Lead (3 Sections)</p>
-          <p><strong>Institution:</strong> Arizona State University | <strong>Department:</strong> School of Earth and Space Exploration (SESE)</p>
-          <p><strong>Semester:</strong> Spring 2024</p>
-          <p>This lab course focused on the practical aspects of introductory astronomy, where students conducted hands-on experiments and observations to reinforce the concepts learned in lectures.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="personal-interests" class="section personal-interests" aria-labelledby="personal-title">
-      <div class="container">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Personal Interests</p>
-          <h2 data-split id="personal-title">Personal Interests</h2>
-        </div>
-
-        <div class="personal-panel reveal">
-          <div class="interest-grid" aria-label="Interest areas">
-            <span><i class="bi bi-trophy" aria-hidden="true"></i> Chess</span>
-            <span><i class="bi bi-book" aria-hidden="true"></i> Books</span>
-            <span><i class="bi bi-globe-central-south-asia" aria-hidden="true"></i> Geography</span>
-            <span><i class="bi bi-music-note-beamed" aria-hidden="true"></i> Music</span>
-            <span><i class="bi bi-stars" aria-hidden="true"></i> Astrophotography</span>
-          </div>
-          <div class="personal-copy">
-            <p>Outside of my academic life, I have a diverse range of interests that keep me engaged and inspired. One of my favorite pastimes is playing chess. I would be happy to connect if you also play on chess.com; my username is <a href="https://www.chess.com/member/voyager972" target="_blank" rel="noopener">Voyager972</a>. Reading books is another passion of mine, particularly pop-science and non-fiction.</p>
-
-            <p>I have a keen interest in geopolitics and geography. Music and singing also play a significant role in my life; I particularly enjoy ghazals, Sufi music, and old Hindi songs.</p>
-
-            <p>I am also interested in astrophotography and aspire to capture the beauty of the night sky. Although I have not had the chance to pursue it as actively as I would like, it remains a goal I look forward to developing in the future.</p>
-
-            <p>Thank you for visiting my page. Feel free to reach out if you share similar interests or just want to connect.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="section contact" aria-labelledby="contact-title">
-      <div class="container">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Contact</p>
-          <h2 data-split id="contact-title">Get in touch.</h2>
-        </div>
-
-        <div class="contact-panel reveal">
-          <div>
-            <h3>Tanmay Singh</h3>
-            <p>Astrophysics PhD Student at Arizona State University, Tempe, AZ.</p>
-          </div>
-          <div class="contact-grid">
-            <a class="contact-tile" href="mailto:tsingh65@asu.edu"><i class="bi bi-envelope" aria-hidden="true"></i><span>Email</span><strong>tsingh65@asu.edu</strong></a>
-            <a class="contact-tile" href="https://scholar.google.com/citations?user=Sfeb8fMAAAAJ&hl=en" target="_blank" rel="noopener"><i class="bi bi-mortarboard" aria-hidden="true"></i><span>Google Scholar</span><strong>Sfeb8fMAAAAJ</strong></a>
-            <a class="contact-tile" href="https://github.com/tanmay-starslab" target="_blank" rel="noopener"><i class="bi bi-github" aria-hidden="true"></i><span>GitHub</span><strong>tanmay-starslab</strong></a>
-            <a class="contact-tile" href="https://www.linkedin.com/in/tanmay-singh-21574a1aa/" target="_blank" rel="noopener"><i class="bi bi-linkedin" aria-hidden="true"></i><span>LinkedIn</span><strong>tanmay-singh-21574a1aa</strong></a>
-          </div>
-        </div>
-      </div>
-    </section>
+    <section class="contact section-shell" id="contact" aria-labelledby="contact-title"><div class="section-label"><span>05 — MAKE A CONNECTION</span><span aria-hidden="true">↗</span></div><p class="eyebrow">QUESTIONS, COLLABORATIONS, OR A GOOD ROCK STORY?</p><h2 id="contact-title">Let’s compare <em>notes.</em></h2><a class="email-link" href="mailto:rpraka15@asu.edu">rpraka15@asu.edu <span aria-hidden="true">↗</span></a><div class="contact-bottom"><span>Rishant Prakash<br><small>University of Central Florida</small></span><a class="button outline" href="assets/Rishant-Prakash-CV.pdf" download>Download CV <span aria-hidden="true">↓</span></a></div></section>
   </main>
-
-  <footer id="footer" class="site-footer">
-    <div class="container">
-      <p>&copy; <span id="year">2026</span> Tanmay Singh. Designed by <a href="https://bootstrapmade.com/" target="_blank" rel="noopener">BootstrapMade</a>; adapted with a custom astrophysics interface.</p>
-    </div>
-  </footer>
-
-  <a href="#home" class="scroll-top" aria-label="Back to top"><i class="bi bi-arrow-up-short" aria-hidden="true"></i></a>
-
-  <script src="assets/js/motion-toggle.js?v=2" defer></script>
-  <script src="assets/js/snapfolio-astro.js?v=2"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/SplitText.min.js" defer></script>
-  <script src="assets/js/plate-field.js?v=2" defer></script>
-  <script src="assets/js/choreography.js?v=7" defer></script>
+  <footer class="site-footer section-shell"><span>© <span id="year">2026</span> Rishant Prakash</span><button id="credits-open">Sources & image credits</button><a href="#home">BACK TO TOP ↑</a></footer>
+  <dialog id="story-panel" class="story-dialog" aria-labelledby="story-title"><button class="dialog-close" aria-label="Close story">×</button><span class="eyebrow" id="story-kicker"></span><h2 id="story-title"></h2><p id="story-text"></p><a class="text-link" id="story-source" target="_blank" rel="noopener"></a><a class="button primary" id="story-next" href="#research">Explore my research →</a></dialog>
+  <dialog id="credits-panel" class="credits-dialog" aria-labelledby="credits-title"><button class="dialog-close" aria-label="Close credits">×</button><p class="eyebrow">THE SOURCE MATERIAL</p><h2 id="credits-title">Credits & context</h2><p>Research, education, and contributions are based on Rishant Prakash’s supplied CV. Current UCF Ph.D. affiliation and ASU as previous research were confirmed by Rishant. The downloadable CV is the supplied document and retains its original ASU-era affiliation; no unconfirmed graduation or project end dates have been added.</p><p><strong>Bennu visualization:</strong> NASA’s Scientific Visualization Studio. Data provided by NASA / University of Arizona / CSA / York University / Open University / MDA. Visualization by Kel Elkins. Bennu is used as an educational illustration; it is not presented as a specimen from my research.</p><ul><li><a href="https://github.com/rishantp22/rishantprakash.github.io" target="_blank" rel="noopener">Website repository · forked from Tanmay Singh’s website ↗</a></li><li><a href="https://svs.gsfc.nasa.gov/4886" target="_blank" rel="noopener">Bennu visualization and full image credits ↗</a></li><li><a href="https://science.nasa.gov/solar-system/asteroids/facts/" target="_blank" rel="noopener">NASA · Asteroid facts ↗</a></li><li><a href="https://science.nasa.gov/solar-system/meteors-meteorites/facts/" target="_blank" rel="noopener">NASA · Meteorite facts ↗</a></li><li><a href="https://ocw.mit.edu/courses/12-119-analytical-techniques-for-studying-environmental-and-geologic-samples-spring-2011/e7ace2638d7b86bab91eb63ea19f524b_MIT12_119S11_PSet2.pdf" target="_blank" rel="noopener">MIT · Rayleigh fractionation model ↗</a></li></ul></dialog>
 </body>
-
 </html>
