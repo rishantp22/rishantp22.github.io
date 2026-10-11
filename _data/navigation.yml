@@ -1,0 +1,23 @@
+# main links links
+main:
+  - title: "Research"
+    url: /research/
+
+  -
+  - title: "Publications"
+    url: /publications/   
+     
+  - title: "CV"
+    url: /cv/
+
+  - title: "Teaching"
+    url: /teaching/   
+
+  - title: "Past Projects"
+    url: /pastprojects/
+  
+  - title: "Personal"
+    url: /personal/
+
+  - title: "Useful Links"
+    url: /usefullinks/
