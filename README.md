@@ -48,6 +48,10 @@ This is the account-level GitHub Pages site. The repository name matches `rishan
 
 Review website changes on a branch and merge them into `master` when ready to publish. A local preview or an unmerged branch does not establish that GitHub Pages is enabled or that deployment has succeeded.
 
+## Traffic analytics
+
+The five primary pages use Google Analytics 4 for visitor and engagement reporting. The Google tag is included once in each page’s head and initializes only on `rishantp22.github.io`, so local previews do not send page views. Enhanced measurement covers page loads, scrolling, outbound links, and file-download link clicks. Browser-history page views and form interactions are disabled. Keep the tag consistent across the five pages when editing the site.
+
 ## Editing and content provenance
 
 Rishant is a Ph.D. student in Planetary and Space Sciences in the Department of Physics at the University of Central Florida (UCF), beginning August 2026. He earned an M.S. in Geological Sciences at Arizona State University’s School of Earth and Space Exploration in July 2026. The downloadable CV includes his academic history, UCF email, two 2026 Meteoritical Society abstracts, and a NASA Travel Award for presenting research at the 88th Annual Meeting of the Meteoritical Society in Frankfurt, Germany.
