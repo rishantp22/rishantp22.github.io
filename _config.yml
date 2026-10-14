@@ -6,15 +6,18 @@
 # `jekyll serve -l -H localhost`. If you change this file, please restart the 
 # server process.
 
+# This inherited Jekyll configuration is inactive while .nojekyll is present.
+# The live website uses the root HTML, CSS, and JavaScript files directly.
+
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Tanmay Singh"
+title                    : "Rishant Prakash"
 title_separator          : "-"
-name                     : &name "Tanmay Singh"
-description              : &description "personal description"
-url                      : https://tanmay-starslab.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+name                     : &name "Rishant Prakash"
+description              : &description "Rishant Prakash, a Ph.D. student in Planetary and Space Sciences in the Department of Physics at the University of Central Florida, studies meteorites, isotope geochemistry, and Solar System origins."
+url                      : https://rishantp22.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "tanmay-starslab/tanmay-starslab.github.io"
+repository               : "rishantp22/rishantp22.github.io"
 
 
 # Site Author - The following control what appear as part of the author content on the side bar.
@@ -22,18 +25,18 @@ repository               : "tanmay-starslab/tanmay-starslab.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "headshot_tanmay.jpeg"
-  name             : "Tanmay Singh"
+  avatar           : # Add a personal portrait filename when available
+  name             : "Rishant Prakash"
   pronouns         : # example: "she/her"  
-  bio              : "Astrophysics PhD student at Arizona State University "
-  location         : "Tempe, AZ"
-  employer         : "Arizona State University"
-  uri              : # URL
-  email            : "tsingh65@asu.edu" 
+  bio              : "Ph.D. student in Planetary and Space Sciences | Department of Physics | University of Central Florida"
+  location         : "Orlando, FL"
+  employer         : "University of Central Florida, Department of Physics"
+  uri              : "https://rishantp22.github.io/"
+  email            : "rishant.prakash@ucf.edu"
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : #"https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+  googlescholar    : "https://scholar.google.com/citations?user=exJYNIsAAAAJ&hl=en"
   impactstory      : # URL
   orcid            : #"http://orcid.org/yourorcidurl"
   semantic         : # URL
@@ -44,7 +47,7 @@ author:
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : "tanmay-starslab"
+  github           : "rishantp22"
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
@@ -56,9 +59,9 @@ author:
   goodreads        : # Username
   google_plus      : # Username
   keybase          : # Username
-  instagram        : "newhorizons_2"
+  instagram        :
   lastfm           : # Username
-  linkedin         : "tanmay-singh-21574a1aa"
+  linkedin         :
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
@@ -66,7 +69,7 @@ author:
   steam            : # Username
   telegram         : # URL
   tumblr           : # Username
-  twitter          : "TanmayS32807693"
+  twitter          :
   vine             : # Username
   weibo            : # Username
   wikipedia        : # Username
@@ -114,7 +117,7 @@ atom_feed:
 
 
 # SEO Related
-google_site_verification : google8a90f455e275e207.html
+google_site_verification : # Ownership is verified via the root HTML verification file
 bing_site_verification   :
 alexa_site_verification  :
 yandex_site_verification :
@@ -282,7 +285,7 @@ sass:
 permalink: /:categories/:title/
 # paginate: 5 # amount of posts to show
 # paginate_path: /page:num/
-timezone: America/Los_Angeles # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: America/New_York # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins
