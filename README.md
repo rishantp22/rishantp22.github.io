@@ -74,6 +74,6 @@ To update the CV, replace `assets/Rishant-Prakash-CV.pdf`, then review all biogr
 
 ## Inherited source and licensing
 
-This repository was forked from Tanmay Singh's website. The earlier AcademicPages/Jekyll source, prior assets, and the original `LICENSE` are retained for provenance and reference. The current root `index.html` uses the static files listed above; it does not import the inherited biography, publications, navigation, or Jekyll content. The previous `useful-links.html` route now redirects to the new research section.
+This repository was forked from Tanmay Singh's website. The original `LICENSE`, source credits, and reusable AcademicPages/Jekyll code are retained for provenance and reference. Inherited personal biographies, research and teaching details, portraits, and portrait icons have been removed; inactive Jekyll pages now point to Rishant’s current pages. The current root `index.html` uses the static files listed above; it does not import the inherited biography, publications, navigation, or Jekyll content. The previous `useful-links.html` route now redirects to the new research section.
 
 Retained source files and assets may still be directly addressable by their paths when GitHub Pages serves the repository. They are not part of the new site's navigation. The original `LICENSE` remains unchanged, and third-party assets retain their applicable licenses and credits. NASA imagery attribution is included on the page.

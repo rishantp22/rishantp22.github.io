@@ -1,8 +1,8 @@
 # The sightline — parked, not deleted
 
-Tanmay asked on 2026-09-25 to keep this off the live page for now. **Nothing was
-deleted.** The section's markup lives in `section.html` next to this file, and
-every other piece of it is exactly where it was.
+This inherited feature is inactive. Its markup remains in `section.html` next to
+this file; the supporting code and scientific references are retained below.
+The restoration notes describe the earlier layout, not the current static site.
 
 ## What this feature is
 

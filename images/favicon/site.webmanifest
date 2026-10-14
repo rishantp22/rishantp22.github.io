@@ -1,13 +1,15 @@
 {
-  "name": "Tanmay Singh | Astrophysics",
-  "short_name": "Tanmay Singh",
+  "name": "Rishant Prakash",
+  "short_name": "Rishant Prakash",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#03050b",
   "theme_color": "#03050b",
   "icons": [
-    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png" },
-    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png" },
-    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+    {
+      "src": "/assets/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
   ]
 }
