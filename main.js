@@ -50,12 +50,12 @@ document.addEventListener('keydown', event => {
 const stories = {
   asteroids: {
     kicker: '01 / SMALL WORLDS', title: 'Archives in orbit.',
-    text: 'Asteroids preserve diverse histories of the Solar System. Some retain ancient mixtures of rock and metal; others experienced melting and separation into layers. Bennu, shown here, is one of these small worlds—a bridge between observations from space and samples studied in the laboratory.',
+    text: 'Asteroids preserve diverse histories of the Solar System. Some retain ancient mixtures of rock and metal; others experienced melting and separation into layers. Bennu, shown here, is one of these small worlds-a bridge between observations from space and samples studied in the laboratory.',
     source: 'NASA · Explore asteroids ↗', url: 'https://science.nasa.gov/solar-system/asteroids/facts/', next: '#research', action: 'Follow the chemical clues →'
   },
   meteorites: {
     kicker: '02 / MESSENGERS FROM SPACE', title: 'A history you can hold.',
-    text: 'Most meteorites found on Earth are fragments of asteroids. Their minerals and chemical compositions preserve clues to heating, alteration, and the ingredients of the early Solar System. My work examines these records in materials including calcium–aluminum-rich inclusions and amoeboid olivine aggregates.',
+    text: 'Most meteorites found on Earth are fragments of asteroids. Their minerals and chemical compositions preserve clues to heating, alteration, and the ingredients of the early Solar System. My work examines these records in materials including calcium-aluminum-rich inclusions and amoeboid olivine aggregates.',
     source: 'NASA · Explore meteorites ↗', url: 'https://science.nasa.gov/solar-system/meteors-meteorites/facts/', next: '#research', action: 'Explore my research →'
   },
   isotopes: {
